@@ -1,0 +1,59 @@
+body{
+    background-color: #ffff;
+}
+
+.perfil{
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 50px 500px 50px;
+}
+
+.titulo{
+    color: rgb(53, 46, 46);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.projetos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont-projetos{
+    text-align: center;
+    width: 200px;
+}
+
+.foto-perfil{
+    border-radius: 200px;
+}
+
+h1{
+    color: black;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+h2{
+    color: grey;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: blanchedalmond;
+    border-radius: 50px;
+}
