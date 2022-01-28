@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #1C5D99;
+}
+
+.inDev{
+    text-align: center;
+}
