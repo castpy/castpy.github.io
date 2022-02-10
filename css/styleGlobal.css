@@ -1,114 +1,97 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@media(max-width: 550px){
-    main> section> .titulo .skill{
-        font-size: 10px;
-    }
-}
-
-:root {
-    --color01: #6C6AF7;
-    --color02: #2321F5;
-    --color03: #1C19C2;
-    --color04: #110F75;
-    --color05: #343275;
-
-    --fontTitulo: 'Ubuntu', sans-serif;
-    --fontPadrao: 'Quicksand', sans-serif;
-}
-
 * {
     margin: 0px;
     padding: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
-body {
-    background-color: var(--color02);
-    font-family: var(--fontPadrao);
-    margin: 0px;
+:root{
+    --cor01: #21FFF5;
+    --cor02: #1EBCE8;
+    --cor03: #2F9BFF;
+    --cor04: #1E51E8;
+    --cor05: #2321FF;
+
 }
 
-header {
-    background-color: var(--color03);
-    min-width: none;
+html, body{
+    background-color: var(--cor05);
+    height: 100%;
+    width: 100%;
 }
 
-header > nav{
-    box-shadow: 0px 7px 7px rgb(0 0 0 / 43%);
-    background-color: var(--cor5);
+header{
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor05));
+    min-height: 90px;
+    max-height: 110px;
+}
+
+header > nav {
     text-align: center;
-    max-height: 90px;
-    padding: 20px;
+    font-weight: bold;  
+    padding: 30px;
 }
 
 header > nav > a {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
     text-decoration: none;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin-top: 80px;
-    color: white;
+    border-radius: 20px;
     padding: 10px;
+    margin: 30px;
 }
 
-header > nav > a:hover {
-    background-color: var(--color02);
-    text-decoration: underline;
-    color: var(--color05);
+header > nav > a:hover{
+    background-color: var(--cor05);
 }
 
-main {
-    background-color: var(--color03);
-    max-width: 70%;
+main{
     margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.466);
+    min-width: 300px;
+    max-width: 1500px;
+    padding: 10px;
+    background-color: var(--cor05);
 }
 
-article {
-    max-width: 100%;
-    max-height: 90%;
-}
-
-article > img{
-    border-radius: 200px;
+main > section > img {
+    margin: auto;
     display: block;
-    max-width: 30%;
-    padding-top: 10px;
-    margin: auto;
+    max-width: 200px;
+    min-width: 150px;
+    border-radius: 100px;
 }
 
-article > h1.titulo {
+main > section > .titulo {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    color: white;
-    max-width: 100%;
 }
 
-article > .skill {
-    margin: auto;
+main > section > .skill {
+    color: rgb(170, 170, 170);
     text-align: center;
-    max-width: 100%;
-    color: grey;
-    padding: 5px;
+    margin-bottom: 20px;
 }
 
-article > h2 {
-    background-image: linear-gradient(to right, var(--color01), var(--color03));
-    text-align: left;
-    text-indent: 5px;
-    margin-top: 10px;
-    max-width: 60%;
-    color: white;
+main > h2 {
+    margin: auto;
+    width: 70%;
+    text-indent: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, var(--cor03), var(--cor05));
 }
 
-article > p {
-    text-align: justify;
+main > p {
+    margin: auto;
+    width: 70%;
     text-indent: 20px;
-    margin-top: 10px;
-    max-width: 100%;
-    padding: 0px 10px 10px 10px;
-    color: white;
+    text-align: justify;
+}
+
+footer{
+    margin-top: 130px;
+    text-align: center;
+}
+
+footer > p > a:hover > strong{
+    text-decoration: underline;
+    color: var(--cor02);
 }
