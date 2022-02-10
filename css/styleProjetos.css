@@ -1,0 +1,56 @@
+:root{
+    --cor01: #21FFF5;
+    --cor02: #1EBCE8;
+    --cor03: #2F9BFF;
+    --cor04: #1E51E8;
+    --cor05: #2321FF;
+
+}
+
+h1{
+    text-align: left;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, var(--cor03), var(--cor05));
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.button > a{
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border: none;
+    display: block;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
+    background-color: var(--cor04);
+}
+
+.button > a:hover{
+    text-decoration: underline;
+    background-color: var(--cor02);
+}
+
+main{
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    min-width: 400px;
+    max-width: 1500px;
+}
+
+main > section {
+    max-width: 100%;
+    padding: 20px;
+}
+
+main > section > img {
+    max-width: 100%;
+}

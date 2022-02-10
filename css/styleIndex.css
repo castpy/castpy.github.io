@@ -1,0 +1,40 @@
+main{
+    margin: auto;
+    min-width: 300px;
+    max-width: 1500px;
+    padding: 10px;
+    background-color: var(--cor05);
+}
+
+main > section > img {
+    margin: auto;
+    display: block;
+    max-width: 200px;
+    min-width: 150px;
+    border-radius: 100px;
+}
+
+main > section > .titulo {
+    text-align: center;
+}
+
+main > section > .skill {
+    color: rgb(170, 170, 170);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main > h2 {
+    margin: auto;
+    width: 70%;
+    text-indent: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, var(--cor03), var(--cor05));
+}
+
+main > p {
+    margin: auto;
+    width: 70%;
+    text-indent: 20px;
+    text-align: justify;
+}
