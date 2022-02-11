@@ -5,6 +5,12 @@
     --cor04: #1E51E8;
     --cor05: #2321FF;
 
+    --python01: #05AFF2;
+    --python02: #0597F2;
+    --python03: #F2A413;
+    --python04: #F2CB05;
+    --python05: #262626;
+
 }
 
 h1{
@@ -16,21 +22,66 @@ h1{
 p{
     text-align: justify;
     text-indent: 20px;
+    margin-bottom: 10px;
 }
 
-.button > a{
-    width: 200px;
-    height: 50px;
-    margin: auto;
-    border: none;
-    display: block;
+a.link{    color: var(--cor02);
+    padding: 3px;
+    background-image: linear-gradient(to right, var(--cor04), transparent);
+}
+
+a.link::after{
+    content: '\1F517';
+}
+
+
+span{
     margin-top: 10px;
-    padding-top: 10px;
+    background-image: linear-gradient(to right, var(--python01), var(--python04));
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.button{
     text-align: center;
+    margin-top: 50px;
+}
+
+.efeito{
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    font-size: 25px;
+    line-height: 25px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito1{
     background-color: var(--cor04);
 }
+
+.efeito1:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.efeito1:hover:before{
+    width: 100%;
+}
+
 
 .button > a:hover{
     text-decoration: underline;
@@ -39,18 +90,21 @@ p{
 
 main{
     margin: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    min-width: 400px;
+    min-width: 600px;
     max-width: 1500px;
 }
 
-main > section {
+main > article {
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+main > article > section {
     max-width: 100%;
     padding: 20px;
 }
 
-main > section > img {
+main > article > section > img {
     max-width: 100%;
 }
