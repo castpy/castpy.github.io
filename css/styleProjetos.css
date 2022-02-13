@@ -12,12 +12,18 @@
     --python05: #262626;
 
 }
+h1#Titulo{
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
 
-h1{
+h2{
     text-align: left;
     margin-bottom: 10px;
     background-image: linear-gradient(to right, var(--cor03), var(--cor05));
 }
+
 
 p{
     text-align: justify;
@@ -34,13 +40,18 @@ a.link::after{
     content: '\1F517';
 }
 
+div.linguagens{
+    background-color: var(--python05);
+    display: flex;
+    flex-wrap: wrap;
+}
 
 span{
-    margin-top: 10px;
-    background-image: linear-gradient(to right, var(--python01), var(--python04));
     padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 0px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, var(--python01), var(--python04));
 }
 
 .button{
@@ -90,21 +101,23 @@ span{
 
 main{
     margin: auto;
-    min-width: 600px;
-    max-width: 1500px;
 }
 
 main > article {
-    display: grid;
+    display: flex;
     margin-bottom: 50px;
-    grid-template-columns: 1fr 1fr;
+    flex-wrap: nowrap;
 }
 
 main > article > section {
     max-width: 100%;
-    padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
 }
 
 main > article > section > img {
-    max-width: 100%;
+    display: block;
+    margin: auto;
+    max-width: 80%;
 }
