@@ -40,17 +40,10 @@ a.link::after{
     content: '\1F517';
 }
 
-div.linguagens{
-    background-color: var(--python05);
-    display: flex;
-    flex-wrap: wrap;
-}
 
 span{
     padding: 5px;
-    border-radius: 20px;
     margin-top: 10px;
-    margin-bottom: 10px;
     background-image: linear-gradient(to right, var(--python01), var(--python04));
 }
 
@@ -101,23 +94,21 @@ span{
 
 main{
     margin: auto;
+    min-width: 600px;
+    max-width: 1500px;
 }
 
 main > article {
-    display: flex;
+    display: grid;
     margin-bottom: 50px;
-    flex-wrap: nowrap;
+    grid-template-columns: 1fr 1fr;
 }
 
 main > article > section {
     max-width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: block;
+    padding: 20px;
 }
 
 main > article > section > img {
-    display: block;
-    margin: auto;
-    max-width: 80%;
+    max-width: 100%;
 }
