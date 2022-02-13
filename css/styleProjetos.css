@@ -18,6 +18,12 @@ h1.title{
     background-image: linear-gradient(to right, var(--cor03), var(--cor05));
 }
 
+h1#title-pai{
+    text-align: center;
+    background-color: var(--cor05);
+    margin-bottom: 20px;
+}
+
 h2{
     text-align: center;
     margin-bottom: 10px;
