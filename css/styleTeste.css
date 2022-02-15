@@ -15,9 +15,9 @@
     padding: 0px;
 }
 
+
 body{
     margin: 5px;
-    height: 624px;
     background-color: var(--cor02);
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.404);
 }
