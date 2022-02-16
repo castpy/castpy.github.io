@@ -1,46 +1,51 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-}
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,500&display=swap');
 
 :root{
-    --cor01: #21FFF5;
-    --cor02: #1EBCE8;
-    --cor03: #2F9BFF;
-    --cor04: #1E51E8;
-    --cor05: #2321FF;
-
+    --cor01: #FFFFFF;
+    --cor02: #F3F3F3;
+    --cor03: #D3EEFF;
+    --cor04: #4679EC;
+    --cor05: #2c2a2a;
+    --fontPadrao: 'Rubik', sans-serif;
 }
 
-html, body{
-    background-color: var(--cor05);
-    height: 100%;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor02);
     width: 100%;
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor02), var(--cor05));
-    min-height: 90px;
-    max-height: 110px;
-}
-
-header > nav {
+    background-color: var(--cor01);
+    font-family: var(--fontPadrao);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
-    font-weight: bold;  
-    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    min-width: 600px;
 }
 
-header > nav > a {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+header > h1 {
+    padding-bottom: 10px;
+}
+
+header > nav > a{
+    background-color: var(--cor03);
+    transition-duration: 0.2s;
     text-decoration: none;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 30px;
+    color: var(--cor05);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 
 header > nav > a:hover{
-    background-color: var(--cor05);
+    background-color: var(--cor02);
 }
