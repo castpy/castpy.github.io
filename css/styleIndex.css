@@ -75,6 +75,7 @@ section.cont-about > article > p{
 section.cont-about > aside{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 10px;
 }
