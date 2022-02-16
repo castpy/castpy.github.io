@@ -14,7 +14,7 @@ main{
     display: block;
     margin: auto;
     width: 90%;
-    min-width: 600px;
+    min-width: 450px;
 }
 
 section.cont-about{
@@ -23,7 +23,7 @@ section.cont-about{
     display: block;
     margin: auto;
     width: 90%;
-    min-width: 605px;
+    min-width: 450px;
     
 }
 
