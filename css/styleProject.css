@@ -8,6 +8,12 @@
     --cor04: #4679EC;
     --cor05: #2c2a2a;
 
+    --html01: #E54C21;
+    --html02: #F16524;
+
+    --css01: #264DE4;
+    --css02: #2965F1;
+
     --descon01: #C50000;
 
     --pandas01: #417199;
@@ -117,6 +123,24 @@ div.recursos > span.descontinuado{
     padding: 5px;
 }
 
+div.recursos > span.html{
+    background-image: linear-gradient(to right, var(--html01), var(--html02));
+    font-family: var(--fontPadrao);
+    font-weight: 400;
+    color: var(--cor01);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div.recursos > span.css{
+    background-image: linear-gradient(to right, var(--css01), var(--css02));
+    font-family: var(--fontPadrao);
+    font-weight: 400;
+    color: var(--cor01);
+    border-radius: 5px;
+    padding: 5px;
+}
+
 section.cont-project > div{
     padding: 10px;
     width: 50%;
@@ -132,12 +156,20 @@ section.cont-project > div > img{
     margin: auto;
 }
 
+section.cont-project > div > h3{
+    font-family: var(--fontPadrao);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: var(--cor05);
+}
+
 section.cont-project > div > p{
     font-family: var(--fontPadrao);
     text-align: justify;
     text-indent: 20px;
     font-weight: 400;
-
+    margin-top: 10px;
 }
 
 section.cont-project > div > a{
