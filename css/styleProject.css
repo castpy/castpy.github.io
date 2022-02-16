@@ -8,7 +8,7 @@
     --cor04: #4679EC;
     --cor05: #2c2a2a;
 
-    --keras01: #C50000;
+    --descon01: #C50000;
 
     --pandas01: #417199;
     --pandas02: #FDBE33;
@@ -100,7 +100,16 @@ div.recursos > span.pandas{
 }
 
 div.recursos > span.opencv{
-    background-image: linear-gradient(to right, var(--opencv01), var(--opencv02), var(--opencv03));
+    background-image: linear-gradient(to right, var(--opencv01), var(--opencv03));
+    font-family: var(--fontPadrao);
+    font-weight: 400;
+    color: var(--cor01);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div.recursos > span.descontinuado{
+    background-color: var(--descon01);
     font-family: var(--fontPadrao);
     font-weight: 400;
     color: var(--cor01);
