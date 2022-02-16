@@ -7,6 +7,24 @@
     --cor03: #D3EEFF;
     --cor04: #4679EC;
     --cor05: #2c2a2a;
+
+    --keras01: #C50000;
+
+    --pandas01: #417199;
+    --pandas02: #FDBE33;
+
+    --opencv01: #00FF03;
+    --opencv02: #FF0201;
+    --opencv03: #0600FF;
+
+    --python01: #FBD35A;
+    --python02: #2B7EB2;
+    --python03: #009600;
+
+    --tensorflow01: #FE8C00;
+    --tensorflow02: #FF9A00;
+    --tensorflow03: #FFA302;
+
     --fontPadrao: 'Rubik', sans-serif;
 }
 
@@ -22,10 +40,10 @@ main > h2{
     width: 50%;
     font-weight: 500;
     font-size: 30px;
-
+    color: var(--cor01);
 }
+
 section.cont-project{
-    background-color: var(--cor03);
     width: 100%;
     min-width: 600px;
     margin-bottom: 20px;
@@ -33,15 +51,76 @@ section.cont-project{
     flex-direction: row;
 }
 
+div.recursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.recursos > span{
+    margin: 10px;
+}
+
+div.recursos > span.python{
+    background-color: var(--python03);
+    font-family: var(--fontPadrao);
+    font-weight: 400;
+    color: var(--cor01);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div.recursos > span.tensorflow{
+    background-image: linear-gradient(to right, var(--tensorflow01), var(--tensorflow03));
+    font-family: var(--fontPadrao);
+    font-weight: 400;
+    color: var(--cor01);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div.recursos > span.keras{
+    background-color: var(--keras01);
+    font-family: var(--fontPadrao);
+    font-weight: 400;
+    color: var(--cor01);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div.recursos > span.pandas{
+    background-image: linear-gradient(to right, var(--pandas01), var(--pandas02));
+    font-family: var(--fontPadrao);
+    font-weight: 400;
+    color: var(--cor01);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div.recursos > span.opencv{
+    background-image: linear-gradient(to right, var(--opencv01), var(--opencv02), var(--opencv03));
+    font-family: var(--fontPadrao);
+    font-weight: 400;
+    color: var(--cor01);
+    border-radius: 5px;
+    padding: 5px;
+}
 
 section.cont-project > div{
     padding: 10px;
     width: 50%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section.cont-project > div > img{
-    max-width: 100%;
-
+    max-width: 80%;
+    display: block;
+    margin: auto;
 }
 
 section.cont-project > div > p{
@@ -65,6 +144,7 @@ section.cont-project > div > a:hover{
 section.cont-project > div > a > h3{
     background-color: var(--cor04);
     font-family: var(--fontPadrao);
+    color: var(--cor01);
     text-align: center;
     margin-top: 10px;
     text-indent: 20px;
