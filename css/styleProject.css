@@ -26,7 +26,6 @@ main > h2{
 section.cont-project{
     background-color: var(--cor03);
     width: 100%;
-    min-width: 600px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
