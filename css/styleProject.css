@@ -1,10 +1,72 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,500&display=swap');
+
+:root{
+    --cor01: #FFFFFF;
+    --cor02: #F3F3F3;
+    --cor03: #D3EEFF;
+    --cor04: #4679EC;
+    --cor05: #2c2a2a;
+    --fontPadrao: 'Rubik', sans-serif;
+}
+
 main{
     margin-top: 10px;
 }
 
-section.back-end{
+main > h2{
+    background-image: linear-gradient(to right, var(--cor04), transparent);
+    font-family: var(--fontPadrao);
+    text-indent: 5px;
+    width: 50%;
+    font-weight: 500;
+    font-size: 30px;
+
+}
+section.cont-project{
+    background-color: var(--cor03);
     width: 100%;
-    min-width: 450px;
+    min-width: 600px;
+    margin-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+section.cont-project > div{
+    margin: 10px;
+    width: 50%;
+}
+
+section.cont-project > div > img{
+    max-width: 100%;
+
+}
+
+section.cont-project > div > p{
+    font-family: var(--fontPadrao);
+    text-align: justify;
+    text-indent: 20px;
+    font-weight: 400;
+
+}
+
+section.cont-project > div > a{
+    text-decoration: none;
+    color: var(--cor05);
+}
+
+section.cont-project > div > a:hover{
+    text-decoration: underline;
+    color: var(--cor01);
+}
+
+section.cont-project > div > a > h3{
+    background-color: var(--cor04);
+    font-family: var(--fontPadrao);
+    text-align: center;
+    margin-top: 10px;
+    text-indent: 20px;
+    font-weight: 400;
+    padding: 10px;
 }
