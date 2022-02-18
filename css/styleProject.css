@@ -14,7 +14,7 @@
     --css01: #264DE4;
     --css02: #2965F1;
 
-    --descon01: #C50000;
+    --descon01: #c500007e;
 
     --pandas01: #417199;
     --pandas02: #FDBE33;
@@ -49,17 +49,12 @@ main > h2{
     color: var(--cor01);
 }
 
-section.cont-project{
-    width: 100%;
-    min-width: 600px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-}
 
 div.recursos{
     display: flex;
     flex-direction: row;
+    max-width: 80%;
+    margin: auto;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -69,81 +64,60 @@ div.recursos > span{
     margin: 10px;
 }
 
-div.recursos > span.python{
-    background-color: var(--python03);
+div.recursos > span.python, span.tensorflow, span.keras, span.pandas, span.opencv, span.descontinuado, span.html, span.css{
     font-family: var(--fontPadrao);
     font-weight: 400;
     color: var(--cor01);
     border-radius: 5px;
     padding: 5px;
+}
+
+div.recursos > span.python{
+    background-color: var(--python03);
 }
 
 div.recursos > span.tensorflow{
     background-image: linear-gradient(to right, var(--tensorflow01), var(--tensorflow03));
-    font-family: var(--fontPadrao);
-    font-weight: 400;
-    color: var(--cor01);
-    border-radius: 5px;
-    padding: 5px;
 }
 
 div.recursos > span.keras{
     background-color: var(--keras01);
-    font-family: var(--fontPadrao);
-    font-weight: 400;
-    color: var(--cor01);
-    border-radius: 5px;
-    padding: 5px;
 }
 
 div.recursos > span.pandas{
-    background-image: linear-gradient(to right, var(--pandas01), var(--pandas02));
-    font-family: var(--fontPadrao);
-    font-weight: 400;
-    color: var(--cor01);
-    border-radius: 5px;
-    padding: 5px;
+    background-color: var(--pandas01);
 }
 
 div.recursos > span.opencv{
     background-image: linear-gradient(to right, var(--opencv01), var(--opencv03));
-    font-family: var(--fontPadrao);
-    font-weight: 400;
-    color: var(--cor01);
-    border-radius: 5px;
-    padding: 5px;
 }
 
 div.recursos > span.descontinuado{
     background-color: var(--descon01);
-    font-family: var(--fontPadrao);
-    font-weight: 400;
-    color: var(--cor01);
-    border-radius: 5px;
-    padding: 5px;
 }
 
 div.recursos > span.html{
     background-image: linear-gradient(to right, var(--html01), var(--html02));
-    font-family: var(--fontPadrao);
-    font-weight: 400;
-    color: var(--cor01);
-    border-radius: 5px;
-    padding: 5px;
 }
 
 div.recursos > span.css{
     background-image: linear-gradient(to right, var(--css01), var(--css02));
-    font-family: var(--fontPadrao);
-    font-weight: 400;
-    color: var(--cor01);
-    border-radius: 5px;
-    padding: 5px;
+
+}
+
+section.cont-project{
+    width: 100%;
+    min-width: 600px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 section.cont-project > div{
     padding: 10px;
-    width: 50%;
+    width: 80%;
     margin: 5px;
     display: flex;
     flex-direction: column;
