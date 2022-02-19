@@ -23,13 +23,15 @@ body{
 header{
     background-color: var(--cor01);
     font-family: var(--fontPadrao);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
     text-align: center;
     padding-top: 10px;
     padding-bottom: 15px;
     margin-bottom: 15px;
     width: 100%;
     min-width: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 header > h1 {
