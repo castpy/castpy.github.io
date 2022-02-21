@@ -30,8 +30,6 @@ header{
     margin-bottom: 15px;
     width: 100%;
     min-width: 600px;
-    display: flex;
-    justify-content: center;
 }
 
 header > h1 {
