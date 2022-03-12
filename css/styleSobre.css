@@ -65,6 +65,11 @@ main {
     min-width: 321px;
 }
 
+main > h1 {
+    width: 100%;
+    text-align: center;
+}
+
 .perfil {
     display: flex;
     flex-direction: row;
