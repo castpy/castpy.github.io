@@ -95,4 +95,8 @@ main {
     .divDireita > img {
         width: 30%;
     }
+
+    .button {
+        font-size: small;
+    }
 }
