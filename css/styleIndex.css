@@ -87,7 +87,7 @@ main {
     width: 35%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 710px) {
     .inicio {
         flex-wrap: wrap-reverse;
     }
@@ -98,5 +98,7 @@ main {
 
     .button {
         font-size: small;
+        text-align: center;
+        width: 30%;
     }
 }
