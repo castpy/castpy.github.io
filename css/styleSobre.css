@@ -143,6 +143,7 @@ main > h1 {
     content: "";
     width: 80%;
     background-color: rgb(94, 255, 0);
+    animation: progress-animationPython 5s normal;
   }
 
   .progress-barHtml::before, .progress-barCss::before{
@@ -150,15 +151,33 @@ main > h1 {
     content: "";
     width: 60%;
     background-color: rgb(94, 255, 0);
+    animation: progress-animationHTMLcss 5s normal;
   }
 
   .progress-barJs::before{
     border-radius: 20px;
     content: "";
-    width: 10%;
+    width: 20%;
     background-color: rgb(94, 255, 0);
+    animation: progress-animationJS 5s normal;
   }  
   
+
+  @keyframes progress-animationPython{
+    0% { width: 0%; } 
+    80% { width: 80%}
+}
+
+@keyframes progress-animationHTMLcss{
+    0% { width: 0%; } 
+    60% { width: 60%}
+}
+
+@keyframes progress-animationJS{
+    0% { width: 0%; } 
+    20% { width: 20%}
+}
+
   .about {
     margin-top: 10px;
     padding-bottom: 10px;
