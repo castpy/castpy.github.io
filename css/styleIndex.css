@@ -13,7 +13,6 @@
     font-family: var(--fontPadrao);
 }
 
-
 .pText {
     text-align: justify;
     text-indent: 20px;
@@ -113,5 +112,10 @@ main {
 
     header > p {
         font-size: 12px;
+    }
+
+    .pText{
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 }
