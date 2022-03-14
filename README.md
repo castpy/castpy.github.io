@@ -15,4 +15,4 @@
 - [x] Página inicial - index
 - [x] Página de projetos
 - [ ] Página de contato
-- [ ] Aplicar responsividade
+- [x] Aplicar responsividade
