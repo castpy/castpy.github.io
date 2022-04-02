@@ -47,4 +47,8 @@
         font-size: 1.5em;
         text-align: center;
     }
+
+    .divEsquerda > .subTitle3, .qr-code {
+        display: none;
+    }
 }
