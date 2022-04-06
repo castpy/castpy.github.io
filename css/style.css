@@ -79,23 +79,28 @@ main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
     flex-direction: row;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
 }
 
 
 #cont-menu{
-    width: 100%;
+    width: 70%;
+    padding: 10px;
     display: flex;
+    margin-top: 10px;
+    border-radius: 20px;
+    position: fixed;
     justify-content: center;
+    background-color: #ffffffb3;
 }
 
 
 #item-menu{
     margin: 10px;
-    color: white;
+    color: black;
     font-size: 1.2em;
     text-decoration: none;
     font-family: var(--fontPadrao);
