@@ -40,6 +40,7 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-image: linear-gradient(to bottom, #333333 50%, #2d2828d6 50%);
 }
 
 .fontTitle{
@@ -56,10 +57,19 @@ main{
     font-family: var(--fontPadrao);
 }
 
-.fonteDestaque {
+.fonteDestaque{
     color: white;
     font-size: 1.2em;
     font-family: var(--fontDestaque);
+}
+
+.fontParagrafo{
+    color: white;
+    font-size: 1em;
+    text-indent: 25px;
+    line-height: 25px;
+    text-align: justify;
+    font-family: var(--fontPadrao);
 }
 
 .linha-vertical{
@@ -67,6 +77,16 @@ main{
     height:70px;
     color:#000;
     border-width:0;
+    background-color:white;
+}
+
+.linha-horizontal{
+    width: 90% ;
+    height: 2px;
+    color: #000;
+    border-width:0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color:white;
 }
 
@@ -139,3 +159,37 @@ main{
     width: 40%;
 }
 
+.periferico01{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.artigoAboutMe{
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #4D4847;
+}
+
+#fotoPerfil{
+    width: 20%;
+    margin-bottom: 20px;
+    border-radius: 200px;
+    border: 5px solid #ffffffb3;
+    box-shadow: 0px 2px 5px 6px rgb(0 0 0 / 18%);
+}
+
+#redesSociais{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.iconRedes{
+    margin: 5px;
+}
