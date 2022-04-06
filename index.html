@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icon/M-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
     
     <title>Marcus Castilho</title>
 </head>
@@ -15,14 +16,15 @@
         <section id="menu">
             <section id="cont-menu">
                 <nav>
-                    <a href="#" id="item-menu">Home</a>
-                    <a href="#" id="item-menu">Projetos</a>
-                    <a href="#" id="item-menu">Sobre mim</a>
+                    <a href="#home" class="item-menu">Home</a>
+                    <a href="#about" class="item-menu">Sobre mim</a>
+                    <a href="#projetos" class="item-menu">Projetos</a>
+                    <a href="#contato" class="item-menu">Contato</a>
                 </nav>
             </section>
         </section>
         <!--Iniciando contúdo principal-->
-        <section class="container-principal">
+        <section id="home" class="container-principal">
             <!--Conteudo esquerdo-->
             <section class="conteudo">
                 <article id="conteudo-meio">
@@ -44,7 +46,7 @@
         </section>
 
         <!--Inciando conteudo periferico-->
-        <section class="container-principal periferico01">
+        <section id="about" class="container-principal periferico01">
             <h1 class="fontTitle">Sobre mim</h1>
             <article class="artigoAboutMe">
                 <img id="fotoPerfil" src="https://avatars.githubusercontent.com/u/61066188?v=4">
@@ -55,20 +57,39 @@
 
                 <h2 class="fontSubTitle">Siga-me</h2>
                 <section id="redesSociais">
-                    <a href="#" class="iconRedes"><img src="/img/icon/facebook.png"></a>
-                    <a href="#" class="iconRedes"><img src="/img/icon/instagram.png"></a>
-                    <a href="#" class="iconRedes"><img src="/img/icon/github.png"></a>
-                    <a href="#" class="iconRedes"><img src="/img/icon/linkedin.png"></a>
+                    <a href="https://www.facebook.com/c4st1lh0" target="_blank" class="iconRedes"><img src="/img/icon/facebook.png"></a>
+                    <a href="https://www.instagram.com/marcus_castpy/" target="_blank" class="iconRedes"><img src="/img/icon/instagram.png"></a>
+                    <a href="https://github.com/c4st1lh0" target="_blank" class="iconRedes"><img src="/img/icon/github.png"></a>
+                    <a href="https://www.linkedin.com/in/c4st1lh0/" target="_blank" class="iconRedes"><img src="/img/icon/linkedin.png"></a>
                 </section>
             </article>
         </section>
 
         <!--Iniciando projetos-->
-        <section class="container-principal periferico02">
-            <section>
-                
+        <section id="projetos" class="container-principal periferico02">
+            <h1 class="fontTitle">Meus Projetos</h1>
+            <section id="android" class="project">
+                <footer>
+                    <h2 class="titleFooter">História do Android</h2>
+                    <a href="https://c4st1lh0.github.io/projeto-android/" target="_blank" class="buttom">Saiba Mais</a>
+                </footer>
             </section>
         </section>
     </main>
+    <footer id="contato" class="rodape">
+        <h1 class="fontTitle">Contato</h1>
+        <section class="contato">
+            <div class="container">
+                <form action="#" class="form-contact" method="post" tabindex="1">
+                  <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />
+                  <input type="email" class="form-contact-input" name="email" placeholder="Email" required />
+                  <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone" />
+                  <textarea class="form-contact-textarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>
+                  <button type="submit" class="form-contact-button">Enviar</button>
+                </form>
+              </div>
+        </section>
+        <p class="fontFooter creditos">Desenvolvido por: <a href="https://www.linkedin.com/in/c4st1lh0/" target="_blank" class="link">Marcus Castilho</a></p>
+    </footer>
 </body>
 </html>

@@ -1,7 +1,11 @@
 /*Configuação GLOBAL*/
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
 
 :root{
     --cor001: #333333;
@@ -47,6 +51,7 @@ main{
     color: white;
     font-size: 2.5em;
     font-weight: 500;
+    margin-bottom: 20px;
     font-family: var(--fontPadrao);
 }
 
@@ -64,11 +69,19 @@ main{
 }
 
 .fontParagrafo{
+    width: 90%;
     color: white;
     font-size: 1em;
     text-indent: 25px;
     line-height: 25px;
     text-align: justify;
+    font-family: var(--fontPadrao);
+}
+
+.fontFooter{
+    color: white;
+    font-size: 1em;
+    text-align: center;
     font-family: var(--fontPadrao);
 }
 
@@ -118,7 +131,7 @@ main{
 }
 
 
-#item-menu{
+.item-menu{
     margin: 10px;
     color: black;
     font-size: 1.2em;
@@ -192,4 +205,83 @@ main{
 
 .iconRedes{
     margin: 5px;
+}
+
+.periferico02{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project{
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    border-radius: 20px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#android{
+    background-size: 100%;
+    background-position: top center;
+    background-image: url("/img/projetos/historiaDoAndroid.png");
+}
+
+.project > footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-direction: column;
+    background-color: rgba(204, 204, 204, 0.801);
+}
+
+.titleFooter{
+    color: black;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--fontPadrao);
+}
+
+.buttom{
+    width: 30%;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #E48108;
+    font-family: var(--fontPadrao);
+}
+
+
+footer.rodape{
+    height: 80vh;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: var(--cor001);
+}
+
+
+.contato{
+    width: 100%;
+}
+
+.link {
+    color: #ccc;
+}
+
+.creditos {
+    position: fixed;
+    bottom:0;
+    left:0;
 }
