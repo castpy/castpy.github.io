@@ -1,4 +1,4 @@
-main#container{
+#subcontainer01{
     height: 100vh;
     position: relative;
     background-size: cover;
@@ -10,7 +10,7 @@ main#container{
 section#area01{
     top: 50%;
     left: 50%;
-    width: 50%;
+    width: 80%;
     text-align: center;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -28,4 +28,68 @@ section#area02{
 h1#tagMeio{
     margin-top: -20px;
     margin-bottom: -10px;
+}
+
+section#subcontainer02{
+    height: 100vh;
+    padding-top: 50px;
+    position: relative;
+    background-color: white;
+}
+
+section#area03{
+    margin: auto;
+    max-width: 80%;
+}
+
+header#about{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+article#area04{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: row;
+}
+
+img#myPhoto{
+    width: 20%;
+    margin-right: 20px;
+    border-radius: 200px;
+}
+
+section#area05{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+article.subarea01{
+    width: 45%;
+}
+
+
+
+article#subarea02{
+    display: flex;
+    flex-direction: column;
+}
+
+.detailsAbout{
+    margin-bottom: 50px;
+}
+
+.listaAbout{
+    width: 70%;
+    margin-left: 50px;
 }
