@@ -1,0 +1,31 @@
+main#container{
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-color: #736CED;
+    background-repeat: no-repeat;
+    background-image: url("/img/areaSite/Background-area01.png");
+}
+
+section#area01{
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+section#area02{
+    top: 90%;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+h1#tagMeio{
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
