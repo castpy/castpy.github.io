@@ -1,0 +1,43 @@
+@charset "utf-8";
+@media (max-width:500px) and (orientation: portrait){
+    header#about{
+        width: 100%;
+        font-size: 0.7em;
+    }
+    article#area04{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    img#myPhoto{
+        width: 200px;
+    }
+
+    article#area04 > p{
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.158);
+    }
+
+    section#area05{
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    article#subarea01{
+        width: 90%;
+    }
+
+    .listaAbout{
+        width: 100%;
+        margin-left: none;
+    }
+
+    .itemLista{
+        width: 80vw;
+    }
+
+}
