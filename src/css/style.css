@@ -164,7 +164,7 @@ section#menu-lateral {
     flex-direction: column;
 }
 
-main#container-02 {
+main#sobre {
     height: 100vh;
     display: flex;
     margin-top: 50px;
