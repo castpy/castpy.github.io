@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*DOSIS*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --corTitutlo: #fff;
+    --tamanhoTitulo: 5em;
+    --fontPadrao: 'Poppins', sans-serif;
+
+    --corTitutlo02: rgba(0, 0, 0, 0.541);
+    --tamanhoTitulo02: 2em;
+    --fontPadrao02: 'Poppins', sans-serif;
+
+    --corTitutloSkills: rgb(0, 0, 0);
+    --tamanhoTituloSkills: 1.7em;
+    --fontPadraoSkills: 'Poppins', sans-serif;
+
+    --pesoSubFont: 700;
+    --tamanhoSubFont: 1.3em;
+    --corSubTitulo: #3E8486;
+    --subFont: 'Dosis', sans-serif;
+
+    --pesoSubFont02: 500;
+    --tamanhoSubFont02: 1em;
+    --corSubTitulo02: #3e8386ab;
+    --subFont02: 'Dosis', sans-serif;
+
+
+    --pesoSubFontDescricaoSkills: 500;
+    --tamanhoSubFontDescricaoSkills: 1.3em;
+    --corSubTituloDescricaoSkills: #000000b0;
+    --subFontDescricaoSkills: 'Dosis', sans-serif;
+
+    --pesoSubFontItemLista: 900;
+    --tamanhoSubFontItemLista: 1em;
+    --corSubTituloItemLista: rgba(0, 0, 0, 0.541);
+    --subFontItemLista: 'Dosis', sans-serif;
+
+    --pesoSubFontItemSubLista: 900;
+    --tamanhoSubFontItemSubLista: 1em;
+    --corSubTituloItemSubLista: rgba(0, 0, 0, 0.432);
+    --subFontItemSubLista: 'Dosis', sans-serif;
+}
+
+.titulo {
+    color: var(--corTitutlo);
+    font-family: var(--fontPadrao);
+    font-size: var(--tamanhoTitulo);
+}
+
+.titulo02 {
+    color: var(--corTitutlo02);
+    font-family: var(--fontPadrao02);
+    font-size: var(--tamanhoTitulo02);
+}
+
+.titleSkills {
+    color: var(--corTitutloSkills);
+    font-family: var(--fontPadraoSkills);
+    font-size: var(--tamanhoTituloSkills);
+}
+
+.subTitulo {
+    color: var(--corSubTitulo);
+    font-family: var(--subFont);
+    font-weight:var(--pesoSubFont);
+    font-size: var(--tamanhoSubFont);
+}
+
+.subTitulo02 {
+    color: var(--corSubTitulo02);
+    font-family: var(--subFont02);
+    font-weight:var(--pesoSubFont02);
+    font-size: var(--tamanhoSubFont02);
+}
+
+.descricaoSkills {
+    width: 100%;
+    line-height: 30px;
+    text-indent: 25px;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: var(--corSubTituloDescricaoSkills);
+    font-family: var(--subFontDescricaoSkills);
+    font-weight:var(--pesoSubFontDescricaoSkills);
+    font-size: var(--tamanhoSubFontDescricaoSkills);
+}
+
+.btn01 {
+    width: 10vw;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    transition: 0.5s ease-out;
+    font-family: var(--fontPadrao);
+}
+
+.btn01:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+.lista {
+    width: 90%;
+    margin-left: 40px;
+}
+
+.itemLista {
+    color: var(--corSubTituloItemLista);
+    font-family: var(--subFontItemLista);
+    font-weight:var(--pesoSubFontItemLista);
+    font-size: var(--tamanhoSubFontItemLista);
+}
+
+
+img#imagemPerfil {
+    width: 20%;
+    border-radius: 100px;
+}
+
+p#descricaoPerfil {
+    width: 50%;
+    text-indent: 25px;
+    text-align: justify;
+    color: var(--corSubTitulo);
+    font-family: var(--subFont);
+    font-weight: var(--pesoSubFont02);
+}
+
+section#container-01 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("/src/img/Background-01.png");
+}
+
+section#menu-lateral {
+    right: 0;
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+main#container-02 {
+    height: 100vh;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section#container-perfil {
+    display: flex;
+    max-width: 1300px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section#container-skills {
+    max-width: 1200px;
+}
+
+section.container-descricao-skllis {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.sub-container-descricao-skllis {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    color: #00000086;
+    bottom: 0;
+    position: fixed;
+}
